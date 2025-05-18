@@ -175,8 +175,13 @@ GET /api/stats/deviation?coin=bitcoin
 ## 🖼️ Project Diagram / Screenshot
 
 > *(Insert your project architecture diagram or screenshot below)*
+![1api-server](https://github.com/user-attachments/assets/ba82ef7f-0144-44dd-9538-413583eca758)
+![2worker-server](https://github.com/user-attachments/assets/66ce3792-1a36-4692-aa02-e8bfbe8ae278)
+ ![3Nats-server](https://github.com/user-attachments/assets/ffef80d5-0275-4ff5-b453-340592c02f7c)
+![4before15min](https://github.com/user-attachments/assets/74f89a2a-c739-4174-8e2b-bd9eca9393a3)
+![5after15min](https://github.com/user-attachments/assets/0f28e573-b361-4546-ad88-2465b5a55fb2)
 
-![Crypto Monitor Diagram](./path-to-your-diagram.png)
+
 
 ---
 
