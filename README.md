@@ -174,6 +174,7 @@ GET /api/stats/deviation?coin=bitcoin
 
 ## 🖼️ Project Diagram / Screenshot
 
+```bash
 ###✅ 1. API Server Started Successfully
 ##This screenshot shows the terminal output of the api-server running successfully.
 ![1api-server](https://github.com/user-attachments/assets/ba82ef7f-0144-44dd-9538-413583eca758)
@@ -195,6 +196,7 @@ After 15 minutes, the worker has fetched and inserted multiple crypto stats docu
 ![5after15min](https://github.com/user-attachments/assets/0f28e573-b361-4546-ad88-2465b5a55fb2)
 
 
+````
 
 ---
 
