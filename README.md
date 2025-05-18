@@ -212,4 +212,3 @@ After 15 minutes, the worker has fetched and inserted multiple crypto stats docu
 
 Created by [Mohammed Vijahath](https://github.com/vizahat36). Contributions welcome!
 
-```
