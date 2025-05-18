@@ -191,7 +191,7 @@ GET /api/stats/deviation?coin=bitcoin
 
 ## 📬 Contact
 
-Created by [Your Name](https://github.com/vizahat36). Contributions welcome!
+Created by [Mohammed Vijahath](https://github.com/vizahat36). Contributions welcome!
 
 ```
 
