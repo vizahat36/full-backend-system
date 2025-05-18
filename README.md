@@ -26,29 +26,29 @@ This is a full backend microservice system for tracking real-time cryptocurrency
 
 crypto-monitor/
 ├── api-server/
-│   ├── src/
-│   │   ├── controllers/
-│   │   │   └── statsController.js     # API logic for returning stats and deviation
-│   │   ├── models/
-│   │   │   └── CryptoStat.js          # Mongoose schema for stats data
-│   │   ├── routes/
-│   │   │   └── statsRoutes.js         # API routes (GET endpoints)
-│   │   ├── services/
-│   │   │   └── coingeckoService.js    # CoinGecko fetching logic (reusable)
-│   │   ├── utils/
-│   │   │   └── db.js                  # MongoDB connection helper
-│   │   ├── index.js                   # Main Express server file
-│   │   ├── nats.js                    # NATS subscriber (receives data from worker)
-│   │   └── storeCryptoStats.js       # Saves received data to DB
-│   ├── .env                           # API environment variables
-│   ├── package.json                   # Dependencies
+├── src/
+│   ├── controllers/
+│   │   └── statsController.js     # API logic for returning stats and deviation
+│   ├── models/
+│   │   └── CryptoStat.js          # Mongoose schema for stats data
+│   ├── routes/
+│   │   └── statsRoutes.js         # API routes (GET endpoints)
+│   ├── services/
+│   │   └── coingeckoService.js    # CoinGecko fetching logic (can be reused)
+│   ├── utils/
+│   │   └── db.js                  # MongoDB connection helper
+│   ├── index.js                   # Main server file (starts Express + DB)
+│   ├── nats.js                    # NATS listener for stats from worker
+│   └── storeCryptoStats.js       # Handles writing received stats to DB
+├── .env                           # Environment config (PORT, MONGO_URI, NATS_URL)
+├── package.json                   # Dependencies and scripts
 │
-├── worker-server/
-│   ├── src/
-│   │   ├── index.js                   # Periodically fetches and sends stats
-│   │   └── nats.js                    # NATS publisher setup
-│   ├── .env                           # Worker environment variables
-│   ├── package.json                   # Dependencies
+worker-server/
+├── src/
+│   ├── index.js                   # Main loop to fetch and send stats
+│   └── nats.js                    # NATS publisher setup
+├── .env                           # Environment config (NATS_URL)
+├── package.json                   # Dependencies and scripts
 
 ````
 
