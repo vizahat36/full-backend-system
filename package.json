@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "nats": "^2.29.3",
+    "node-cron": "^4.0.5"
+  }
+}
